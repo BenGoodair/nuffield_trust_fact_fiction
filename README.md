@@ -4,7 +4,7 @@ Welcome to a holding repository for underlying data and explanations for a Nuffi
 
 # What is available?
 
-The repo currently holds data files and final figures used in this article [link].
+The repo currently holds data files and final figures used in this Nuffield Trust article [link].
 
 The repo is structured with a master dataset of all care home and domiciliary care locations, and their characteristics stored in the "underlying data" folder. The underlying data includes for each care location: it's open and close date, type of provision, ownership category, provider name, area deprivation, and average overall inspection rating across the location's lifetime.
 
