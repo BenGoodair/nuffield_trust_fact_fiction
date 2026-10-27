@@ -14,7 +14,7 @@ Then there are also csv files for the numbers underlying each figure in their ow
 
 ## CQC data
 
-To download the data - we ran python code calling the CQC API for each location and provider, harmonising all inspections and locations ever registered to the CQC. An old version of this code is published [here](https://github.com/BenGoodair/adults_social_care_data/blob/main/Code/Location_rating_pull.py). If you want our up to date python code which pulls and harmonises full CQC API data, I'd be happy to share this.
+To download the data - we ran python code calling the CQC API for each location and provider, harmonising all inspections and locations ever registered to the CQC. An old version of this code is published [here](https://github.com/BenGoodair/adults_social_care_data/blob/main/Code/Location_rating_pull.py). If you want our up to date python code which pulls and harmonises full CQC API data, email me (see bottom), I'd be happy to share this.
 
 We then classify all care homes by the CQC's binary flag carehome y/n. And we classify all domiciliary care locations as any location where the location's primary inspection category is "Community based adult social care services".
 
@@ -35,7 +35,7 @@ We undertook a large process of ownership classification to identify a nuanced r
    * Or a firm name includes any of the following terms: "topco", "seniorco", "newco", "midco", "bidco", "opco", "equity", "partner", “capital”, “venture", "althea investments", "welltower".
    * And where “shareholding” relates to any of the following: shareholders, persons of sig control, controlling shareholders, ultimate owners. And the shareholders, persons of sig control and ultimate owners of all of the immediate shareholders, persons of sig control and ultimate owners.
 
-There are some considerations to understand in relation to this ownership classification.
+There are some considerations to understand in relation to this ownership classification. First and foremost, we access the data using FAME's Moody's interface. One of the difficulties of this is that the interface returns no shareholding for dissolved firms - therefore our estimates of investment ownership historically are going to under-represent true levels. Our classification also often misses out REITs - which do not have the same corporate structure as private equity firms and often do not have "midco" type firms in their corporate structure.
 
 # Notes and considerations
 
